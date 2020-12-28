@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="1029.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Sample4Controller">
+   <children>
+      <Button fx:id="RestartBtn" layoutX="588.0" layoutY="376.0" mnemonicParsing="false" onAction="#RestartBtnClicked" prefHeight="35.0" prefWidth="75.0" text="Restart" />
+      <Button fx:id="MainBtn" layoutX="831.0" layoutY="376.0" mnemonicParsing="false" onAction="#MainBtnClicked" prefHeight="35.0" prefWidth="109.0" text="Go to Main menu" />
+       <Button fx:id="ContinueBtn" layoutX="294.0" layoutY="376.0" mnemonicParsing="false" onAction="#ContinueBtnClicked" prefHeight="35.0" prefWidth="82.0" text="Continue" />
+    <Button fx:id="ScoreBtn" layoutX="831.0" layoutY="276.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="109.0" text="Score" />
+       <Button fx:id="TotalScoreBtn" layoutX="831.0" layoutY="176.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="109.0" text="Total score" />
+   
+      <Label layoutX="472.0" layoutY="172.0" prefHeight="70.0" prefWidth="333.0" text="GAME OVER">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

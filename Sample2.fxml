@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="arc" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="1455.0" style="-fx-background-color: #262a29;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Sample2Controller">
+   <children>
+      <Label fx:id="scoreLabel" layoutX="1315.0" layoutY="-3.0" prefHeight="53.0" prefWidth="47.0" text="0" textFill="#fff6f6">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="pauseBtn" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#pauseBtnClicked" text="Pause" />
+      <Button fx:id="ResumeBtn" layoutX="14.0" layoutY="40.0" mnemonicParsing="false" onAction="#ResumeBtnClicked" text="Resume" />
+      <Button fx:id="SaveBtn" layoutX="14.0" layoutY="70.0" mnemonicParsing="false" onAction="#SaveBtnClicked" text="Save" />
+      <Button fx:id="ExitBtn" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" onAction="#ExitBtnClicked" text="Exit" />
+      <Button fx:id="MainBtn" layoutX="14.0" layoutY="130.0" mnemonicParsing="false" onAction="#MainBtnClicked" text="Go to main menu" />
+      
+      <AnchorPane fx:id="containerOfTriangle" layoutX="447.0" layoutY="163.0" prefHeight="386.0" prefWidth="525.0">
+         <children>
+            <Line fx:id="purpleLineOfTriangle" endX="38.0" endY="-115.14213562011719" layoutX="213.0" layoutY="142.0" startX="-185.0" startY="216.0" stroke="#962dfc" strokeWidth="20.0" />
+            <Line fx:id="yellowLineOfTriangle" endX="332.0" endY="217.0" layoutX="169.0" layoutY="142.0" startX="83.0" startY="-117.0" stroke="#ffd808" strokeWidth="20.0" />
+            <ImageView fx:id="imgViewOfStarOfTriangle" fitHeight="36.0" fitWidth="47.0" layoutX="238.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/starImage.JPG" />
+               </image>
+            </ImageView>
+            <Line fx:id="pinkLineOfTriangle" endX="175.0" layoutX="327.0" layoutY="361.0" startX="-298.0" stroke="#fc2283" strokeWidth="20.0" />
+         </children>
+      </AnchorPane>
+      <Circle fx:id="circle" fill="#fc2283" layoutX="709.0" layoutY="638.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+      <AnchorPane fx:id="containerOfSquare" layoutX="934.0" layoutY="132.0" prefHeight="352.0" prefWidth="392.0">
+         <children>
+            <Line fx:id="purpleLineOfSquare" endX="173.0" layoutX="-154.0" layoutY="337.0" startX="173.0" startY="-323.0" stroke="#962dfc" strokeWidth="20.0" />
+            <Line fx:id="blueLineOfSquare" endX="173.0" layoutX="203.0" layoutY="14.0" startX="-184.0" stroke="#2ad0f6" strokeWidth="20.0" />
+            <Line fx:id="pinkLineOfSquare" endX="173.0" layoutX="203.0" layoutY="337.0" startX="-184.0" stroke="#fc2283" strokeWidth="20.0" />
+            <Line fx:id="yellowLineOfSquare" endX="173.0" layoutX="203.0" layoutY="337.0" startX="173.0" startY="-323.0" stroke="#ffd808" strokeWidth="20.0" />
+            <ImageView fx:id="imgViewOfStarOfSquare" fitHeight="36.0" fitWidth="37.0" layoutX="179.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/starImage.JPG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="containerOfRhombus" layoutX="456.0" layoutY="26.0" prefHeight="375.0" prefWidth="392.0">
+         <children>
+            <Line fx:id="yellowLineOfRhombus" endX="147.0" endY="-4.0" layoutX="203.0" layoutY="351.0" startX="176.0" startY="-317.0" stroke="#ffd808" strokeWidth="20.0" />
+            <Line fx:id="blueLineOfRhombus" endX="173.0" layoutX="207.0" layoutY="24.0" startX="-184.0" stroke="#2ad0f6" strokeWidth="20.0" />
+            <Line fx:id="purpleLineOfRhombus" endX="131.0" endY="-3.0" layoutX="-149.0" layoutY="347.0" startX="169.0" startY="-325.0" stroke="#962dfc" strokeWidth="20.0" />
+            <Line fx:id="pinkLineOfRhombus" endX="193.0" layoutX="158.0" layoutY="357.0" startX="-178.0" stroke="#fc2283" strokeWidth="20.0" />
+            <ImageView fx:id="imgViewOfStarOfRhombus" fitHeight="36.0" fitWidth="37.0" layoutX="166.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/starImage.JPG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="containerOfLineObs" layoutX="14.0" layoutY="229.0" prefHeight="476.0" prefWidth="525.0">
+         <children>
+            <Line fx:id="pinkLineOfLineObs" endX="173.0" layoutX="80.0" layoutY="238.0" startX="-44.0" stroke="#fc2283" strokeWidth="20.0" />
+            <Line fx:id="yellowLineOfLineObs" endX="173.0" layoutX="317.0" layoutY="238.0" startX="-44.0" stroke="#ffd808" strokeWidth="20.0" />
+            <Line fx:id="blueLineOfLineObs" endX="173.0" layoutX="199.0" layoutY="130.0" rotate="90.0" startX="-44.0" stroke="#2ad0f6" strokeWidth="20.0" />
+            <Line fx:id="purpleLineOfLineObs" endX="173.0" layoutX="199.0" layoutY="347.0" rotate="90.0" startX="-44.0" stroke="#962dfc" strokeWidth="20.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="containerOfChanger" layoutX="43.0" layoutY="132.0" prefHeight="207.0" prefWidth="237.0">
+         <children>
+            <ImageView fx:id="imgViewOfChanger" fitHeight="89.0" fitWidth="94.0" layoutX="72.0" layoutY="49.0">
+               <image>
+                  <Image url="@../images/colorChangerImage.JPG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
